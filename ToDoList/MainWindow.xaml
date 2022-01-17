@@ -8,10 +8,10 @@
         Title="To Do List" Height="450" Width="626.118">
 
     <Grid>
-        <ListBox HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="239"></ListBox>
-        <TextBox Name ="txtInput" HorizontalAlignment="Left" Height="35" FontSize="20" Margin="254,10,0,0" TextWrapping="Wrap" Text="Enter a task" VerticalAlignment="Top" Width="325"/>
-        <Button Name ="btnAdd" Content="Add"  IsEnabled ="false" HorizontalAlignment="Left" Margin="254,50,0,0" VerticalAlignment="Top" Width="88" Height="76"/>
-        <Button Name="btnDelete" Content="Delete" IsEnabled="false" HorizontalAlignment="Left" Margin="347,50,0,0" VerticalAlignment="Top" Width="88" Height="76"/>
+        <ListBox Name ="lstBoxList" HorizontalAlignment="Left" Height="401" Margin="10,10,0,0" VerticalAlignment="Top" Width="239" SelectionChanged="lstBoxList_SelectionChanged"></ListBox>
+        <TextBox Name ="txtInput" HorizontalAlignment="Left" Height="35" FontSize="20" Margin="254,10,0,0" TextWrapping="Wrap" Text="Enter a task" VerticalAlignment="Top" Width="325" KeyDown="txtInput_KeyDown" />
+        <Button Name ="btnAdd" Content="Add"  IsEnabled ="false" HorizontalAlignment="Left" Margin="254,50,0,0" VerticalAlignment="Top" Width="88" Height="76" Click="btnAdd_Click"/>
+        <Button Name="btnDelete" Content="Delete" IsEnabled="false" HorizontalAlignment="Left" Margin="347,50,0,0" VerticalAlignment="Top" Width="88" Height="76" Click="btnDelete_Click"/>
 
     </Grid>
 </Window>
